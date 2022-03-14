@@ -13,15 +13,6 @@ export default defineConfig({
     }),
     Components({
       resolvers: [ElementPlusResolver()],
-    }),
-  ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          echarts: ['echarts']
-        }
-      }
-    }
-  }
+    })
+  ]
 })
